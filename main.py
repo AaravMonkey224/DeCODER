@@ -8,7 +8,6 @@ from time import sleep as wait
 def clear():
     _ = call('clear' if os.name =='posix' else 'cls')
 
-print(screens.title)
 
 def main():
 	start = True
@@ -30,4 +29,5 @@ def main():
 			print(colour.RED + "THAT WAS NOT A VALID INPUT" + colour.WHITE)
 
 if __name__ == "__main__":
+	print(screens.title)
 	main()
